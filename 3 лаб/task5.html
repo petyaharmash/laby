@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p onclick="gameLab()">повернути масив всіх об’єктів з типом ‘EUR’ та для кожного об’єкту
+        подвоїти значення value</p>
+    <script >
+        function gameLab(){
+        var arr = [
+            {value: 100, type: 'USD'},
+            {value: 215, type: 'EUR'},
+            {value: 7, type: 'EUR'},
+            {value: 99, type: 'USD'},
+            {value: 354, type: 'USD'},
+            {value: 12, type: 'EUR'},
+            {value: 77, type: 'USD'},
+        ];
+        let arrEUR = [];
+        arr.forEach(function(el){ 
+                if(el['type'] == 'EUR' ){
+                   arrEUR.push({value: (el['value']*2), type: 'EUR'})
+                }
+            })
+        console.log(arrEUR)
+        }
+        
+
+    </script>
+    
+</body>
+</html>

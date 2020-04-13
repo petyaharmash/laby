@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+
+        var timesClicked = 50;
+        
+        function btnClickLess(){
+          if(timesClicked == 1){
+            alert('жодної');
+          } 
+          
+            timesClicked --;     
+            document.getElementById('timesClicked').innerHTML = timesClicked;
+            return true 
+        }
+             
+            </script>
+            
+        <center>
+          <span id="timesClicked">50</span>
+        </center>
+            <button type="button" class="btn btn-default" onclick="javascript:btnClickLess()">мінус одна пляшка</button>   
+        
+</body>
+</html>
